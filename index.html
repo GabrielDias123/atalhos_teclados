@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Atalhos teclado</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>ESPN</h1>
+        </nav>
+
+        <nav>
+            <a href="https://www.espn.com.br/">Home</a>
+        <a href="https://support.espn.com/hc/pt-br">Contato</a>
+        <a href="https://www.espn.com.br/artigo/_/id/4056431/quem-somos">Sobre</a>
+        </nav>
+    </header>
+ 
+    <div id="corpo">
+        <p>
+            Atalhos utilizados na página:<br>
+            <li>CTRL + q serve para acessar o link Sobre da página;</li> <br>
+            <li>CTRL + i serve para acessar o link da imagem da página;</li><br>
+            <li>CTRL + m serve para acessar o bloco de mensagem da página;</li>
+        </p>
+ 
+        <a href="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0329%2Fr1311558_1296x729_16%2D9.png&w=272&h=153&scale=crop&cquality=80&location=origin" target="_blank">
+            <img src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0329%2Fr1311558_1296x729_16%2D9.png&w=272&h=153&scale=crop&cquality=80&location=origin" width="20%" height="20%" alt="Imagem Placeholder">
+        </a>
+        <div id="mensagem-form">
+            <input type="text" id="mensagem-input" placeholder="Digite sua mensagem">
+            <button id="enviar-btn">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("keydown", function(event){
+    if (event.ctrlKey && event.key === "q"){
+        window.location.href = "https://www.espn.com.br/artigo/_/id/4056431/quem-somos";
+    }
+    if (event.ctrlKey && event.key === "i") {
+        window.open("https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0329%2Fr1311558_1296x729_16%2D9.png&w=272&h=153&scale=crop&cquality=80&location=origin");
+    }
+    if (event.ctrlKey && event.key === "m") {
+        document.getElementById("mensagem-input").focus();
+    }
+});
+    </script>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados - Desenvolvido por Gabriel Dias de Barros.</p>
+    </footer>
+</body>
+</html>
